@@ -1,2 +1,4 @@
 #!/bin/sh
-mv "$@" ~/.Trash/
+trash() {
+    mv "$@" ~/.Trash/
+}
