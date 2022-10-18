@@ -1,7 +1,7 @@
 #!/bin/sh
 trash() {
     case "$OSTYPE" in
-        solaris*) echo "SOLARIS" ;;
+        solaris*) mv "$@" ~/.local/share/trash ;;
         darwin*)  mv "$@" ~/.Trash/ ;; 
         linux*)   mv "$@" ~/.local/share/trash ;;
         bsd*)     mv "$@" ~/.local/share/trash ;;
